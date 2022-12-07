@@ -1,0 +1,75 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url(Imagenes/wallpaer.jpg);
+    background-size:contain;
+    width: 1024px;
+    background-color: black;
+    margin-left: auto;
+    margin-right: auto;
+    border: 8px double wheat;
+    border-radius: 30px;
+    text-align: center;
+    padding: auto;
+}
+
+
+.header {
+    padding: 5px;
+    height: 310px;
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+}
+
+.nav {
+    font-family: 'Times New Roman', Times, serif;
+    border-radius: 20px;
+    padding: 5px;
+    border-radius: 20px;
+    background-color: black;
+}
+
+main,
+aside {
+    float:left;
+    background-color: black;
+    border-radius: 20px;
+    padding-top: 10px;
+}
+
+main {
+    width: 700px;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 340px;
+    color: red;
+}
+
+aside {
+    width: 307px;
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 340px;
+    color: red;
+    border: 2px solid wheat;
+}
+
+.footer {
+    height: 450px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    color: black;
+    background-color: white;
+    clear: both;
+    padding-top: 10px;
+    border-radius: 20px;
+}
+
+img {
+border-radius: 75px;
+}
