@@ -15,23 +15,30 @@ body {
     border-radius: 30px;
     text-align: center;
     padding: auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-
-.header {
+header {
     padding: 5px;
+    width: 1024px;
     height: 310px;
     background-color: white;
     border-radius: 20px;
     color: black;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.nav {
+nav {
     font-family: 'Times New Roman', Times, serif;
     border-radius: 20px;
     padding: 5px;
     border-radius: 20px;
     background-color: black;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 main,
@@ -40,6 +47,8 @@ aside {
     background-color: black;
     border-radius: 20px;
     padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 main {
@@ -48,6 +57,8 @@ main {
     font-family: 'Courier New', Courier, monospace;
     font-weight: 340px;
     color: red;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 aside {
@@ -57,9 +68,11 @@ aside {
     font-weight: 340px;
     color: red;
     border: 2px solid wheat;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-.footer {
+footer {
     height: 450px;
     font-family: 'Courier New', Courier, monospace;
     font-size: large;
@@ -68,8 +81,112 @@ aside {
     clear: both;
     padding-top: 10px;
     border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 img {
 border-radius: 75px;
+display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width:768px) {
+    *{box-sizing: border-box;}
+    body {
+        width: 768px;
+        margin: 0;
+        padding: 0;
+        background: url(Imagenes/wallpaer.jpg);
+        background-size:contain;
+        background-color: black;
+        border: 8px double wheat;
+        border-radius: 30px;
+        padding: auto;
+        margin-left: auto;
+        margin-right: auto; 
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    header,
+    nav,
+    aside,
+    main,
+    footer {
+        border: 2px solid wheat;
+    }
+    header,
+    nav,
+    footer {
+        width: 768px;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+    header {
+        height: 200px;
+    }
+    main {
+        width: 768px;
+    }
+    aside {
+        width: 768px;
+    }
+    footer {
+        height: 450px;
+    }
+}
+
+@media (max-width:425px) {
+    *{box-sizing: border-box;}
+    body {
+        width: 425px;
+        margin: 0;
+        padding: 0;
+        background-size:contain;
+        background-color: black;
+        border: 8px double wheat;
+        border-radius: 30px;
+        padding: auto;
+        margin-left: auto;
+        margin-right: auto; 
+        text-align: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    header,
+    nav,
+    aside,
+    main,
+    footer {
+        border: 2px solid wheat;
+    }
+    header,
+    nav,
+    footer {
+        width: 425px;
+        display:flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+
+    }
+    header {
+        height: 200px;
+    }
+    main {
+        width: 425px;
+    }
+    aside {
+        width: 425px;
+    }
+    footer {
+        height: 450px;
+    }
 }
